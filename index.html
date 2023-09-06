@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&amp;family=Montserrat:wght@100;400;500;600&amp;family=Poppins:wght@100;200;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Ice Cards</title>
+  </head>
+  <body>
+    <!-- Dropdown for selecting a team -->
+    <select id="teamDropdown">
+      <option value="">Select a Team</option>
+    </select>
+
+    <!-- Dropdown for selecting a player -->
+    <select id="playerDropdown">
+      <option value="">Select a Player</option>
+    </select>
+
+    <div class="flip-card" id="flip-card">
+      <div class="flip-card-inner">
+        <div class="cardFront" id="container">
+          <div class="card" id="layer-1"></div>
+          <div class="card" id="layer-2"></div>
+          <div class="card" id="image-container">
+            <img alt="" id="playerImage" src="" />
+          </div>
+          <div class="card" id="layer-3"></div>
+          <div class="card" id="playerID">
+            <div class="card" id="playerNumber">77</div>
+            <div class="card" id="playerName">John Smith</div>
+            <div class="card" id="playerPosition">LW</div>
+          </div>
+
+          <div class="card" id="playerTeamBG"></div>
+          <img class="card" id="playerTeam" src="" />
+        </div>
+        <div id="player-card-back">
+          <div class="cardBack" id="playerInfo">
+            <img alt="" id="headshot" src="" />
+            <div id="player-name">John Smith</div>
+            <div id="player-number">#77</div>
+            <div id="player-position">Left Wing</div>
+            <div id="playerHometown">Lehi, UT USA</div>
+            <div id="playerAge">Age: 34</div>
+            <div id="playerHeight">Height: 6' 10"</div>
+            <div id="playerWeight">Weight: 180 lbs</div>
+            <div id="playerHanded">Shoots: Left</div>
+            <img alt="Team Logo" id="team-logo" src="" />
+          </div>
+          <div id="statsSeason">Season 2022-2023</div>
+          <div id="stats-container">
+            <div class="stats" id="gamesPlayed">
+              <div class="stat-value">null</div>
+              <p>GAMES</p>
+            </div>
+            <div class="stats" id="goals">
+              <div class="stat-value">null</div>
+              <p>GOALS</p>
+            </div>
+            <div class="stats" id="assists">
+              <div class="stat-value">null</div>
+              <p>ASSISTS</p>
+            </div>
+            <div class="stats" id="points">
+              <div class="stat-value">null</div>
+              <p>POINTS</p>
+            </div>
+            <div class="stats" id="plusminus">
+              <div class="stat-value">null</div>
+              <p>+/-</p>
+            </div>
+            <div class="stats" id="pim">
+              <div class="stat-value">null</div>
+              <p>PIM</p>
+            </div>
+            <div class="stats" id="timeonicegames">
+              <div class="stat-value">null</div>
+              <p>TOI/G</p>
+            </div>
+            <div class="stats" id="powerplaygoals">
+              <div class="stat-value">null</div>
+              <p>PPG</p>
+            </div>
+            <div class="stats" id="powerplaypoints">
+              <div class="stat-value">null</div>
+              <p>PPP</p>
+            </div>
+            <div class="stats" id="shots">
+              <div class="stat-value">null</div>
+              <p>SHOTS</p>
+            </div>
+            <div class="stats" id="shotpercentage">
+              <div class="stat-value">null</div>
+              <p>SHOT %</p>
+            </div>
+            <div class="stats" id="shifts">
+              <div class="stat-value">null</div>
+              <p>SHIFTS</p>
+            </div>
+            <div class="stats" id="gamewingoals">
+              <div class="stat-value">null</div>
+              <p>GWG</p>
+            </div>
+            <div class="stats" id="overtimegoals">
+              <div class="stat-value">null</div>
+              <p>OTG</p>
+            </div>
+            <div class="stats" id="blocked">
+              <div class="stat-value">null</div>
+              <p>BLOCKED</p>
+            </div>
+            <div class="stats" id="faceoffpct">
+              <div class="stat-value">null</div>
+              <p>FO%</p>
+            </div>
+            <div class="stats" id="shorthandedgoals">
+              <div class="stat-value">null</div>
+              <p>SHG</p>
+            </div>
+            <div class="stats" id="shorthandedpoints">
+              <div class="stat-value">null</div>
+              <p>SHP</p>
+            </div>
+            <div class="stats" id="shorthandedtimeonice">
+              <div class="stat-value">null</div>
+              <p>SH-TOI</p>
+            </div>
+            <div class="stats" id="hits">
+              <div class="stat-value">null</div>
+              <p>HITS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

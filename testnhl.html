@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHL Stats API Interaction</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>NHL Stats API Interaction</h1>
+    <button onclick="fetchAllTeams()">Fetch All Teams</button>
+    <button onclick="getAllPositions()">Fetch Players by Position</button>
+    <button onclick="getTeamsByDivision()">Fetch Teams by Division</button>
+    <input type="hidden" id="teamId" />
+    <div id="results"></div>
+    <button onclick="goBack()">Go Back</button>
+    <script src="nhl_stats_api_interaction.js"></script>
+  </body>
+</html>

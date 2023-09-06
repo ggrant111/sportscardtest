@@ -1,0 +1,324 @@
+:root {
+  --primary-color: red;
+  --secondary-color: white;
+  --team-logo: https://cdn.freebiesupply.com/logos/large/2x/washington-capitals-logo.png;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+/* Container holding both SVG and IMG */
+#container {
+  box-shadow: 0px 0px 80px;
+  box-shadow: black;
+  border: 1px solid black;
+  width: 300px;
+  height: 420px;
+  position: relative;
+  margin: auto;
+}
+/* SVG styling */
+#layer-1 {
+  background-color: var(--primary-color);
+
+  width: 300px;
+  height: 420px;
+  position: relative;
+  z-index: 1;
+}
+/* Image styling */
+#playerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3; /* Lower than layer-3 but higher than the SVG */
+  border-bottom-right-radius: 10px;
+}
+#layer-2 {
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 410px;
+  background-color: var(--secondary-color);
+  z-index: 2;
+  border-bottom-right-radius: 10px;
+}
+/* Layer-3 styling */
+#layer-3 {
+  width: 280px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  background-color: var(--primary-color);
+  border-bottom-right-radius: 10px;
+  z-index: 3; /* Highest among all */
+}
+#playerName {
+  border-bottom-right-radius: 10px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 20px;
+  width: 280px;
+  height: 30px;
+  z-index: 4;
+}
+#playerPosition {
+  bottom: 68px;
+  color: var(--secondary-color);
+  padding-left: 4px;
+  right: -5px;
+  position: relative;
+  z-index: 40;
+}
+#playerNumber {
+  left: 252px;
+  bottom: 43px;
+  position: relative;
+  color: var(--secondary-color);
+  padding-right: 4px;
+  z-index: 40;
+}
+#playerTeam {
+  top: 5px;
+  right: 15px;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  z-index: 5; /* Highest among all */
+}
+#playerTeamBG {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  top: 5px;
+  right: 0;
+  position: absolute;
+  width: 100px;
+  height: 75px;
+  background-color: var(--secondary-color);
+  border-top: 2px solid var(--primary-color);
+  z-index: 4;
+  border-left: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+#image-container {
+  width: 270px;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}
+
+/* Image */
+#image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: calc(right -50px); /* optional, to adjust position */
+}
+#player-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 80px;
+  box-shadow: black;
+  border: 1px solid black;
+  width: 300px;
+  height: 420px;
+  background-color: var(--primary-color);
+
+  margin: auto;
+  z-index: 0;
+}
+#playerInfo {
+  height: 35%;
+}
+
+#playerHeadshot {
+  width: 130px;
+  height: 130px;
+}
+
+#headshot {
+  background-size: 100%;
+  background-color: var(--secondary-color);
+  background-image: url(--team-logo);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border: 4px solid var(--secondary-color);
+  width: 130px;
+  height: 130px;
+  position: relative;
+  top: 10px;
+  left: 5px;
+  z-index: 2;
+}
+
+#player-name {
+  z-index: 2;
+  color: var(--secondary-color);
+  position: relative;
+  top: -132px;
+  left: 145px;
+  font-weight: 600;
+}
+
+#player-number {
+  z-index: 2;
+  font-weight: 500;
+  position: relative;
+  top: -136px;
+  right: -261px;
+  color: var(--secondary-color);
+}
+#player-position {
+  z-index: 2;
+  color: var(--secondary-color);
+  position: relative;
+  top: -160px;
+  right: -145px;
+}
+
+#playerAge {
+  z-index: 2;
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+  position: relative;
+  top: -165px;
+  left: 145px;
+}
+#playerHometown {
+  z-index: 2;
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+  position: relative;
+  top: -165px;
+  left: 145px;
+}
+#playerHeight {
+  z-index: 2;
+  font-size: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+  position: relative;
+  top: -165px;
+  left: 145px;
+}
+#playerWeight {
+  z-index: 2;
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+  position: relative;
+  top: -165px;
+  left: 145px;
+}
+#playerHanded {
+  z-index: 2;
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+  position: relative;
+  top: -165px;
+  left: 145px;
+}
+
+#team-logo {
+  z-index: 1;
+  opacity: 0.1;
+  position: relative;
+  top: -110px;
+  left: 0px;
+  width: 300px;
+}
+#stats-container {
+  margin: auto;
+  /* margin-top: 0px; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 5px;
+  box-sizing: border-box;
+  z-index: 30;
+  border-radius: 10px;
+  /* margin: 3px; */
+  height: 58%;
+  width: 98%;
+  background-color: var(--secondary-color);
+  font-size: 0.75rem;
+}
+
+/* Flip Card Container */
+.flip-card {
+  perspective: 1000px;
+}
+
+/* Flip Card Inner */
+.flip-card-inner {
+  margin: auto;
+  position: relative;
+  width: 300px;
+  height: 420px;
+  /* text-align: center; */
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+
+/* Front and Back of Card */
+.cardFront,
+#player-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Back of Card */
+#player-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Flipped State */
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.stats {
+  font-weight: 400;
+  color: var(--primary-color);
+  /* border: 1px solid var(--primary-color); */
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  line-height: 20px;
+  text-align: center;
+  height: 42px;
+  width: 63px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  flex-direction: column;
+}
+
+.stats p {
+  width: 63px;
+  border-bottom: 0.1px solid var(--primary-color);
+  font-size: 0.75rem;
+  margin: 1px;
+}
+
+#statsSeason {
+  text-align: center;
+  color: var(--secondary-color);
+  /* position: absolute; */
+  bottom: 7px;
+  left: 90px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
